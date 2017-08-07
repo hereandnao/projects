@@ -6,6 +6,7 @@ Recherche de la meilleure solution pour poser N tétriminos dans une grille.
 
 Search of the best solution to put N tetriminos in a grid.
 
+
 - libft [C] - Common core
 
 Clone de la libc
@@ -33,6 +34,7 @@ Graph creation and traversal - pathfinding : find the shortest path.
 - ls [C] - UNIX
 
 Un clone de ls
+
 A ls clone
 
 - push_swap [C] - Algorithmics
