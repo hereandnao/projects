@@ -1,0 +1,157 @@
+<html>
+<head>
+  <title>Barry</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="utils.js"></script>
+  <script type="text/javascript">
+
+    var accessToken = "ef701781b1bd4dd3919a44fd0e110235",
+      baseUrl = "https://api.api.ai/v1/",
+      $speechInput,
+      $recBtn,
+      recognition,
+      messageRecording = "Recording...",
+      messageCouldntHear = "Je ne peux pas vous entendre, pouvez vous reessayer ?",
+      messageInternalError = "Oh non, il ya une erreur côté serveur",
+      messageSorry = "Desolé,je n'ai pas encore la réponse à ta demande";
+      var message1 = "Cela fait deux semaines que vous n'etes pas sorti de chez vous, je me suis permis de prévenir vos proches.";
+      var NumProche = ['+33783037579'];
+      var entree1 = "Oui";
+
+    $(document).ready(function() {
+		  respond(message1);
+      $speechInput = $("#speech");
+      $recBtn = $("#rec");
+
+      // $speechInput.keypress(function(event) {
+      //   if (event.which == 13) {
+      //     event.preventDefault();
+      //     send();
+      //   }
+      // });
+
+      // $recBtn.on("click", function(event) {
+      //   switchRecognition();
+      // });
+
+
+      // $(".debug__btn").on("click", function() {
+      //   $(this).next().toggleClass("is-active");
+      //   return false;
+      // });
+
+    });
+
+    function prepareResponse(val) {
+
+      var debugJSON = JSON.stringify(val, undefined, 2);
+
+      if (val.result.action == 'yes_call'){
+        $.ajax({
+        type: "POST",
+        url: "http://localhost:8000/sendsms",
+        contentType: "application/json; charset=utf-8",
+        dataType: "json",
+        data: JSON.stringify({"to": "+33783037579", "body": "Bonjour"}),
+
+        success: function(data) {
+          // appeler correspondant et grand mere
+        },
+
+        error: function() {
+          // pas d'erreur
+        }
+      });
+        debugRespond(debugJSON);
+      }
+
+    }
+
+    function respond(val) {
+
+      if (val == "") {
+
+        val = messageSorry;
+
+      }
+
+      if (val !== messageRecording) {
+
+        var msg = new SpeechSynthesisUtterance();
+
+        msg.voiceURI = "native";
+
+        msg.text = val;
+
+        msg.lang = "fr-FR";
+
+        window.speechSynthesis.speak(msg);
+
+        msg.onend = function(e){
+        	$.ajax({
+            type: "POST",
+            url: "http://localhost:8000/sendsms",
+            contentType: "application/json; charset=utf-8",
+            dataType: "json",
+            data: JSON.stringify({"to": NumProche, "body": "Bonjour"}),
+
+            success: function(data) {
+              // appeler correspondant et grand mere
+            },
+
+            error: function() {
+              // pas d'erreur
+            }
+          });
+        }
+
+      }
+
+      $("#spokenResponse").addClass("is-active").find(".spoken-response__text").html(val);
+
+    }
+
+  </script>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+  <div class="container">
+
+    <input id="speech" type="text">
+
+    <button id="rec" class="btn">Speak</button>
+
+    <div id="spokenResponse" class="spoken-response">
+
+      <div class="spoken-response__text"></div>
+
+    </div>
+
+  </div>
+
+  <div class="debug">
+
+    <div class="debug__btn btn">
+
+      Debug JSON results
+
+    </div>
+
+    <div class="debug__content">
+
+      <textarea id="response" cols="40" rows="20"></textarea>
+
+    </div>
+
+  </div>
+
+
+
+  <link href="https://fonts.googleapis.com/css?family=Titillium+Web:200" rel="stylesheet" type="text/css">
+
+</body>
+
+</html>

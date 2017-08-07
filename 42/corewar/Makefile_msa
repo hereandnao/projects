@@ -1,0 +1,85 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    Makefile                                           :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: saubenne <saubenne@student.42.fr>          +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2017/04/23 15:41:46 by saubenne          #+#    #+#              #
+#    Updated: 2017/07/27 15:36:36 by bmickael         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+NAME = msa
+CC = gcc
+MAIN_DIRECTORY = msa_srcs
+
+### MAIN FLAGS ###
+
+ifeq ($(DEBUG),yes)
+	CFLAGS = -Wall -Wextra -Werror -std=c99 -g -O0 -fsanitize=address
+else
+	CFLAGS = -Wall -Wextra -Werror -std=c99
+endif
+
+### SOURCES ###
+
+SRC_CORE = msa parse fill_output read_file check_file check_bytecode extractor \
+op_misc op_fork op_ld op_ldi op_stx op_math op_logical
+SRC_WOF = base
+
+SRC_LIST = $(SRC_CORE) $(SRC_WOF)
+VPATH = $(MAIN_DIRECTORY)/core $(MAIN_DIRECTORY)/wof
+
+## HEADERS
+
+HEADERS = msa.h wof.h int_wof.h
+
+### LIBRAIRIES ###
+
+LIB_DIR = .
+_LIBFT = libft
+LIBFT = $(addprefix $(LIB_DIR)/, $(_LIBFT))
+
+### ~~~~~~~~~~ ###
+
+SRC = $(addsuffix .c, $(SRC_LIST))
+OBJ_DIR = $(MAIN_DIRECTORY)/objs
+TMP = $(basename $(notdir $(SRC)))
+OBJ = $(addprefix $(OBJ_DIR)/, $(addsuffix .o, $(TMP)))
+
+
+IFLAGS = -I$(LIBFT)/includes -I$(MAIN_DIRECTORY)
+LDFLAGS = -L$(LIBFT) -lft
+
+.PHONY: all clean fclean re help
+
+all: $(NAME)
+
+$(NAME): $(OBJ)
+	$(CC) $(CFLAGS) -o $(NAME) $(OBJ) $(LDFLAGS)
+
+$(OBJ_DIR)/%.o: %.c $(HEADERS)
+	$(CC) -c $(CFLAGS) -o $@ $< $(IFLAGS)
+
+clean:
+	rm -f $(OBJ)
+
+fclean: clean
+	rm -f $(NAME)
+
+re: fclean all
+
+help:
+	@echo
+	@echo "Programm $(NAME)"
+	@echo
+	@echo "--------------------------------------------------------------------------"
+	@echo " Disp rules."
+	@echo
+	@echo " all     : Compile the program $(NAME) into $(BINDIR) directory."
+	@echo " re      : Recompile all objets of the programm."
+	@echo " clean   : Remove objects."
+	@echo " fclean  : Remove objects and programm."
+	@echo " help    : Display this."
+	@echo "--------------------------------------------------------------------------"

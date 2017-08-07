@@ -1,0 +1,1 @@
+find games/ -name "*" -exec ./asm `readlink -f {}` \;
