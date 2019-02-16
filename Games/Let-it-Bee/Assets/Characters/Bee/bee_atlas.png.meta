@@ -1,0 +1,380 @@
+fileFormatVersion: 2
+guid: edfc3f52dc2882142ac9ff2c451ce281
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: bee_atlas_0
+    21300002: bee_atlas_1
+    21300004: bee_atlas_2
+    21300006: bee_atlas_3
+    21300008: bee_atlas_4
+    21300010: bee_atlas_5
+    21300012: bee_atlas_6
+    21300014: bee_atlas_7
+    21300016: bee_atlas_8
+    21300018: bee_atlas_9
+    21300020: bee_atlas_10
+    21300022: bee_atlas_11
+  externalObjects: {}
+  serializedVersion: 5
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: bee_atlas_0
+      rect:
+        serializedVersion: 2
+        x: 37.875443
+        y: 175.71977
+        width: 65
+        height: 68
+      alignment: 9
+      pivot: {x: 0.48653165, y: 0.4894151}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3571bcd7bcdc7074991466ec2a530b18
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bee_atlas_1
+      rect:
+        serializedVersion: 2
+        x: 109.220474
+        y: 173.46281
+        width: 75.56894
+        height: 76.917465
+      alignment: 9
+      pivot: {x: 0.49993458, y: 0.50101995}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c5709022429bfc46bf8622e507a1c0f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bee_atlas_2
+      rect:
+        serializedVersion: 2
+        x: 177.88925
+        y: 195
+        width: 43
+        height: 61
+      alignment: 9
+      pivot: {x: 0.5025755, y: 0.5163934}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8775e3bd891e524297b5f0a839d3626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bee_atlas_3
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 194
+        width: 43
+        height: 62
+      alignment: 9
+      pivot: {x: 0.5232558, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15689801109be6341a2a4a0d2d8cb86e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bee_atlas_4
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 164
+        width: 20
+        height: 28
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e20c661dde3c17044b5d76c3442f9e0b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bee_atlas_5
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 165
+        width: 19
+        height: 27
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a275dd3ac5324b0438679aee76dc428a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bee_atlas_6
+      rect:
+        serializedVersion: 2
+        x: 139.93893
+        y: 94
+        width: 70
+        height: 39
+      alignment: 9
+      pivot: {x: 0.5008724, y: 0.525641}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74d0685b1f0353a4bb4094ce2516b8ea
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bee_atlas_7
+      rect:
+        serializedVersion: 2
+        x: 200.77371
+        y: 96
+        width: 55.226288
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5201561, y: 0.5125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 009d0c2f25a37ca47b349c22744431b5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bee_atlas_8
+      rect:
+        serializedVersion: 2
+        x: 152.14209
+        y: 49.661465
+        width: 41
+        height: 35.000004
+      alignment: 9
+      pivot: {x: 0.47214413, y: 0.48110095}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eaefc7025d6107243b0cd9c3b751ce06
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bee_atlas_9
+      rect:
+        serializedVersion: 2
+        x: 212.26457
+        y: 47.92603
+        width: 34
+        height: 36.999996
+      alignment: 9
+      pivot: {x: 0.49221846, y: 0.47497222}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 618ae3e70c4ab8b42a06bea3e1a98343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bee_atlas_10
+      rect:
+        serializedVersion: 2
+        x: 152.0098
+        y: 3.4843369
+        width: 43
+        height: 33
+      alignment: 9
+      pivot: {x: 0.4997722, y: 0.48532313}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97819415095d930428dd638d2f2df22b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bee_atlas_11
+      rect:
+        serializedVersion: 2
+        x: 212.97086
+        y: 1.2554436
+        width: 33
+        height: 37
+      alignment: 9
+      pivot: {x: 0.50088316, y: 0.49309614}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 535ce30b83775f24fa51cf6cd5793945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 9d0335e9089ecf445beaadf370b09f37
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  userData: 636690739543679896
+  assetBundleName: 
+  assetBundleVariant: 
