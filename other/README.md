@@ -8,7 +8,7 @@ Notre proposition : Création d'une aide auditive "smart" (rappels quotidiens, c
 
 Creation d'une app permettant d'appeler des proches via reconnaissance vocale, d'émettre des alertes et rappels (médicaments, rendez-vous), d'appeler les secours en cas de chute/absence d'activité.
 
-#Titanic
+# Titanic
 
 Kaggle Machine Learning Challenge : https://www.kaggle.com/c/titanic
 Predict survival on the Titanic
